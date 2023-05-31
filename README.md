@@ -113,7 +113,7 @@ Para criar a imagem, rodei:
 
 i = Imagem.carregar('test_images/python.png')
 
-    a = i.focada(11)
+a = i.focada(11)
     
-    a.salvar('python_focada.png')
+a.salvar('python_focada.png')
     
