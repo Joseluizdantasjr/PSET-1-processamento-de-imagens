@@ -109,6 +109,9 @@ Dividindo pelos valores de 1, obtemos o kernel que, ao multiplicar os valores I 
 
 ## Questão 6:
 
+Enquanto o kernel Kx é utilizado para detectar as bordas horizontais do objeto, o kernel Ky é responsável por detectar as bordas verticais.
+Assim, o primeiro é utilizado para criar uma imagem com as bordas horizxontais destacadas e o outro das verticais. Ao juntar os valores com a aplicação da fórmula, obtem-se a imagem com todas as bordas detectadas. 
+
 Para criar a imagem, rodei:
 
 i = Imagem.carregar('test_images/python.png')
