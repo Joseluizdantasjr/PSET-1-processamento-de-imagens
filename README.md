@@ -15,62 +15,105 @@ a.salvar("bluegill_invertida.png")
 ## Questão 3:
 Para calcular o valor do pixel, basta multiplicar o valor de cada pixel do array 3x3 em sua volta pelo valor na posição correspondente no kernel, e fazer a soma de todos.
 Assim:
+
 (0 * 80) + (0,07 * 53) + (0 * 99) + (-0,45 + 129) + (1,20 * 127) + (-0,25 * 148) + (0 * 175) + (-0,12 * 174) + (0 * 193)
+
 = (0,07 * 53) + (-0,45 + 129) + (1,20 * 127) + (-0,25 * 148) + (-0,12 * 174)
+
 = (-3,71) + (-58,05) + 152,4 + (-37) + (-20,88)
+
 = 32,76
 
 ## Questão 4:
 Para criar o kernel rodei:
+
 kernel = [
+
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [1, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    
     [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
 ]
 E apartir dele para obter a imagem, rodei:
+
 i = Imagem.carregar('test_images/pigbird.png')
+
 a = i.correlacao(kernel)
+
 a.salvar('pigbirg_kernel.png')
 
 ## Questão 5:
 Ao pegar uma imagem I podemos representar o kernel como:
+
 I(x-1, y-1), I(x, y-1), I(x+1, y-1)
+
 I(x-1, y),   I(x, y),   I(x+1, y+1)
+
 I(x-1, y+1), I(x, y+1), I(x+1, y+1)
 
 Para Calcular 2I, basta multiplicar cada valor por 2:
+
 2(I(x-1, y-1)), 2(I(x, y-1)), 2(I(x+1, y-1))
+
 2(I(x-1, y)),   2(I(x, y)),   2(I(x+1, y+1))
+
 2(I(x-1, y+1)), 2(I(x, y+1)), 2(I(x+1, y+1))
 
 O kernel de desfoque de caixa 3x3 possuim 9 valores de 1/9:
+
 1/9 1/9 1/9
+
 1/9 1/9 1/9
+
 1/9 1/9 1/9
 
 Assim, para calcular o valor da imagem borrada B, basta multiplicar os valores de I pelos valores do kernel de desfoque de caixa:
+
 1/9(I(x-1, y-1)), 1/9(I(x, y-1)), 1/9(I(x+1, y-1))
+
 1/9(I(x-1, y)),   1/9(I(x, y)),   1/9(I(x+1, y+1))
+
 1/9(I(x-1, y+1)), 1/9(I(x, y+1)), 1/9(I(x+1, y+1))
 
 Com isso, 2I - B representa:
+
 (2-1/9)(I(x-1, y-1)), (2-1/9)(I(x, y-1)), (2-1/9)(I(x+1, y-1))
+
 (2-1/9)(I(x-1, y)),   (2-1/9)(I(x, y)),   (2-1/9)(I(x+1, y+1))
+
 (2-1/9)(I(x-1, y+1)), (2-1/9)(I(x, y+1)), (2-1/9)(I(x+1, y+1))
 
+
 Dividindo pelos valores de 1, obtemos o kernel que, ao multiplicar os valores I por ele e arrendondar, obtém-se os valores de S, sendo este kernel:
-(2-1/9) (2-1/9) (2-1/9)
-(2-1/9) (2-1/9) (2-1/9)
+
 (2-1/9) (2-1/9) (2-1/9)
 
+(2-1/9) (2-1/9) (2-1/9)
+
+(2-1/9) (2-1/9) (2-1/9)
+
+
 ## Questão 6:
+
 Para criar a imagem, rodei:
+
 i = Imagem.carregar('test_images/python.png')
+
     a = i.focada(11)
+    
     a.salvar('python_focada.png')
+    
