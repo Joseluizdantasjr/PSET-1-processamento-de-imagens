@@ -68,3 +68,9 @@ Dividindo pelos valores de 1, obtemos o kernel que, ao multiplicar os valores I 
 (2-1/9) (2-1/9) (2-1/9)
 (2-1/9) (2-1/9) (2-1/9)
 (2-1/9) (2-1/9) (2-1/9)
+
+## Questão 6:
+Para criar a imagem, rodei:
+i = Imagem.carregar('test_images/python.png')
+    a = i.focada(11)
+    a.salvar('python_focada.png')
