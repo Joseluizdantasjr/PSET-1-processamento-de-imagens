@@ -13,6 +13,7 @@ a = i.invertida()
 a.salvar("bluegill_invertida.png")
 
 Imagem invertida:
+
 ![bluegill_invertida](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/bluegill_invertida.png)
 
 ## Questão 3:
@@ -58,6 +59,8 @@ i = Imagem.carregar('test_images/pigbird.png')
 a = i.correlacao(kernel)
 
 a.salvar('pigbirg_kernel.png')
+
+[pigbird_kernel.png](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/pigbirg_kernel.png)
 
 ## Questão 5:
 Ao pegar uma imagem I podemos representar o kernel como:
@@ -109,12 +112,6 @@ Dividindo pelos valores de 1, obtemos o kernel que, ao multiplicar os valores I 
 
 (2-1/9) (2-1/9) (2-1/9)
 
-
-## Questão 6:
-
-Enquanto o kernel Kx é utilizado para detectar as bordas horizontais do objeto, o kernel Ky é responsável por detectar as bordas verticais.
-Assim, o primeiro é utilizado para criar uma imagem com as bordas horizxontais destacadas e o outro das verticais. Ao juntar os valores com a aplicação da fórmula, obtem-se a imagem com todas as bordas detectadas. 
-
 Para criar a imagem, rodei:
 
 i = Imagem.carregar('test_images/python.png')
@@ -123,3 +120,17 @@ a = i.focada(11)
     
 a.salvar('python_focada.png')
     
+[python_focada](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
+
+## Questão 6:
+
+Enquanto o kernel Kx é utilizado para detectar as bordas horizontais do objeto, o kernel Ky é responsável por detectar as bordas verticais.
+Assim, o primeiro é utilizado para criar uma imagem com as bordas horizxontais destacadas e o outro das verticais. Ao juntar os valores com a aplicação da fórmula, obtem-se a imagem com todas as bordas detectadas. 
+
+i = Imagem.carregar('test_images/construct.png')
+
+a = i.bordas()
+    
+a.salvar('construct_bordas.png')
+    
+[construct_bordas](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
