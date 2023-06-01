@@ -139,4 +139,4 @@ a.salvar('construct_bordas.png')
 
 ### Imagem com bordas detectadas:
 
-![construct_bordas](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
+![construct_bordas](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/construct_bordas.png)
