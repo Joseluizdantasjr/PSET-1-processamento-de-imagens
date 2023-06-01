@@ -5,8 +5,11 @@
 Tarefa em python para realiza funções de processamento de imagens. Segue abaixo respostas das questões determinadas.
 ## Questão 1:
 O output esperado dos pixels seria [226, 166, 119, 55]. Para obtê-lo, basta subtrair os valores de cada um dos pixels originais ([29, 89, 136, 200]) de 255. Ou seja, 255 - 29 = 226, 
+
 255 - 89 = 166, 
+
 255 - 136 = 119, 
+
 255 - 55 = 200
 
 ## Questão 2:
