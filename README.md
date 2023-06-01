@@ -12,6 +12,9 @@ i = Imagem.carregar('test_images/bluegill.png')
 a = i.invertida()
 a.salvar("bluegill_invertida.png")
 
+Imagem invertida:
+![bluegill_invertida](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/bluegill_invertida.png)
+
 ## Questão 3:
 Para calcular o valor do pixel, basta multiplicar o valor de cada pixel do array 3x3 em sua volta pelo valor na posição correspondente no kernel, e fazer a soma de todos.
 Assim:
