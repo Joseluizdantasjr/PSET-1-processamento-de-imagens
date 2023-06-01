@@ -12,7 +12,7 @@ i = Imagem.carregar('test_images/bluegill.png')
 a = i.invertida()
 a.salvar("bluegill_invertida.png")
 
-Imagem invertida:
+### Imagem invertida:
 
 ![bluegill_invertida](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/bluegill_invertida.png)
 
@@ -60,7 +60,9 @@ a = i.correlacao(kernel)
 
 a.salvar('pigbirg_kernel.png')
 
-[pigbird_kernel.png](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/pigbirg_kernel.png)
+### Imagem passada pelo kernel:
+
+![pigbird_kernel.png](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/pigbirg_kernel.png)
 
 ## Questão 5:
 Ao pegar uma imagem I podemos representar o kernel como:
@@ -119,8 +121,10 @@ i = Imagem.carregar('test_images/python.png')
 a = i.focada(11)
     
 a.salvar('python_focada.png')
-    
-[python_focada](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
+
+### Imagem focada:
+
+![python_focada](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
 
 ## Questão 6:
 
@@ -132,5 +136,7 @@ i = Imagem.carregar('test_images/construct.png')
 a = i.bordas()
     
 a.salvar('construct_bordas.png')
-    
+
+### Imagem com bordas detectadas:
+
 [construct_bordas](https://github.com/Joseluizdantasjr/PSET-1-processamento-de-imagens/blob/main/imagens_questoes/python_focada.png)
